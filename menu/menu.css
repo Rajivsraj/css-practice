@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+
+/* UL */
+.nav-list{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+    background-color: skyblue;
+    
+}
+
+/* LI */
+.nav-item{
+    display: inline-block;
+}
+
+.nav-item:hover{
+    background-color: teal;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* ANCHOR */
+.nav-link{
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
