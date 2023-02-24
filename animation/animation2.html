@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 1</title>
+</head>
+<body>
+
+<div class="box1"> hello </div>
+
+<style>
+body{
+    margin: 0px;
+}
+.box1{
+    /*background: linear-gradient(red, green, blue); */
+    background: yellow;
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    animation-name: colorchange;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+@keyframes colorchange {
+    0%{background-color: yellowgreen;}
+    25%{background-color: orange;}
+    50%{background-color: orangered;}
+    75%{background-color: red;}
+    100%{background-color: orangered;}
+}
+
+
+</style>
+
+
+</body>
+</html>

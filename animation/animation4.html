@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 1</title>
+</head>
+<body>
+
+<div class="box1"> hello </div>
+
+<style>
+body{
+    margin: 0px;
+}
+.box1{
+    /*background: linear-gradient(red, green, blue); */
+    background: yellow;
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes colorchange {
+    0%{
+        top: 0px;
+        left: 0px;
+        background-image: url('../one.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20;
+    }
+    25%{
+        top: 0px;
+        left: 200px;
+        background-image: url('../two.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+    }
+    50%{
+        top: 200px;
+        left: 200px;
+        background-image: url('../images/fruit.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 60px;
+    }
+    75%{
+        top: 200px;
+        left: 0px;
+        background-image: url('../images/two.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 80px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-image: url('../images/two.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 100px;
+    }
+}
+
+
+</style>
+
+
+</body>
+</html>
