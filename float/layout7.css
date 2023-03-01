@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+.nav-list{
+    border: 2px solid red;
+}
+
+.left-sidebar{
+    border: 2px solid green;
+    width: 20%;
+    float: left;
+}
+
+
+.main-content{
+    border: 2px solid blue;
+    float: left;
+    width: 80%;
+}
+
+.footer{
+    border: 2px solid brown;
+    clear: left;
+}

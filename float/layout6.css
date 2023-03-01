@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+
+.nav-list{
+    border: 2px solid red;
+}
+
+.left-sidebar{
+    border: 2px solid blue;
+    width: 200px;
+    float: left;
+
+}
+
+.main-content{
+    border: 2px solid green;
+    margin-left: 200px;
+}
+
+.one{
+    border: 2px solid rebeccapurple;
+    clear: left;
+}

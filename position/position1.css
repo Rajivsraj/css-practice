@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.menu1{
+    border: 2px solid green;
+    background-color: #117911b3;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0px
+}
+
+.left-sidebar{
+    border: 2px solid blue;
+    margin-top: 40px;
+    width: 15%;
+    float: left;
+
+}
+
+.content{
+    border: 2px solid red;
+    float: left;
+    width: 85%;
+    margin-top: 40px;
+}
+
+.one{
+    padding: 10px;
+    border: 2px solid red;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 40px;
+    bottom: 0px;
+    position: fixed;
+}
