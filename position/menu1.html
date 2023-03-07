@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1</title>
+</head>
+<body>
+    ok ok
+    <div class="dropdown">
+        Dropdwon
+        <div class="box">
+            <a href="#">Home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">gallery</a>
+        </div>
+      
+    </div>
+
+<style>
+body{
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+.dropdown{
+    border: 2px solid red;
+    position: relative;
+    background-color: orange;
+    width: 200px;
+    padding: 10px;
+}
+
+.box{
+    border: 2px solid blue;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+
+    left: 0px;
+}
+
+.dropdown:hover .box{
+
+    display: block;
+
+}
+
+a{
+    display: block;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: green;
+}
+
+</style>
+</body>
+</html>
