@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.dropdown{
+    border: 2px solid red;
+    padding: 5px 10px;
+    position: relative;
+    width: 200px;
+    float: left;
+}
+.dropdown:hover{
+    background-color: yellow;
+}
+.nav-list{
+    border: 2px solid blue;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 100%;
+    display: none;
+}
+
+.dropdown:hover .nav-list{
+    display: block;
+}
+
+.nav-link{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+.nav-link:hover{
+    background-color: green;
+
+}
