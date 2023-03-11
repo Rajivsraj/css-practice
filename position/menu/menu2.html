@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 2</title>
+</head>
+<body>
+
+<ul class="nav-list">
+    <li class="dropdown">Dropdown
+        <ul class="container">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+        </ul>
+    </li>
+</ul>
+
+
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+body{
+    margin: 0px;
+}
+.nav-list{
+    border: 2px solid red;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    width: 200px;
+}
+
+.dropdown{
+    border: 2px solid blue;
+    position: relative;
+}
+
+.dropdown:hover{
+    background-color: green;
+}
+
+.container{
+    border: 2px solid green;
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+
+.dropdown:hover .container{
+    display: block;
+}
+
+.nav-item:hover{
+    background-color: yellow;
+}
+</style>
+
+
+</body>
+</html>
