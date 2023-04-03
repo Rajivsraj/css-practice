@@ -1,0 +1,58 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.nav{
+    border: 2px solid red;
+}
+
+.nav-list::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.nav-list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+    border: 2px solid green;
+
+}
+
+.nav > .nav-list > .nav-item{
+    border: 2px solid green;
+    float: left;
+}
+
+.nav-item:hover{
+    background-color: green;
+}
+
+.nav-link{
+    border: 2px solid blue;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+.dropdown > .nav-list{
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover > .nav-list{
+    display: block;
+}
+
+.dropdown .dropdown > .nav-list{
+    left: 100%;
+    top: 0px;
+}

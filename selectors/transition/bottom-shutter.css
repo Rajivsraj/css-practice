@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    border: 2px solid red;
+    width: 300px;
+    position: relative;
+}
+
+.blank{
+ 
+    position: absolute;
+    width: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden; 
+    transition: height 2s;
+    background-color: yellow    ;
+    /* height: 100%; */
+}
+
+.card:hover .blank{
+    height: 100%;
+
+
+   
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="one ek">Hello 1 hi hello</div>
+    <div class="one do">Hello 2 by</div>
+    <div class="one teen">Hello 3 one tow three four</div>
+    <div class="one char">Hello 4</div>
+</div>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+}
+
+.one{
+    border: 2px solid green;
+    padding: 5px;
+    width: 300px;   
+}
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    border: 2px solid red;
+    width: 250px;
+    height: 400px;
+    margin: auto;
+}
+
+.bg-img{
+    background-image: url("images/wallpaper.jpg");
+    height: 40%;
+    background-size: cover;
+}
+
+.card-body{
+    border: 2px solid blue;
+    height: 60%;
+    padding: 0px 10px;
+}
+
+.h3{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.details{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.profile{
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px gray;
+    
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+code{
+    color: red;
+}
+/* Text css */
+.text-center{
+    text-align: center;
+}
+
+.d-block{
+    display: block;
+}
+
+.text-orangered{
+    color: orangered;
+}
