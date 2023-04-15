@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Item Properties</title>
+</head>
+<body>
+<div class="row">
+    <div class="common col-1">hello 1</div>
+    <div class="common col-2">hello 2</div>
+    <div class="common col-3">hello 3</div>
+    <div class="common col-4">hello 4</div>
+    <div class="common col-5">hello 5</div>
+</div>
+
+<style>
+body{
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.row{
+    border: 2px solid blue;
+    display: flex;
+}
+
+.common{
+    border: 2px solid red;
+    flex: 1 1 auto;
+}
+
+
+</style>
+</body>
+</html>
