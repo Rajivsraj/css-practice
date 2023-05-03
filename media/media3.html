@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="col-2 col-md-4 col-sm-5"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, voluptate dignissimos id animi quam autem iure sunt. Maiores quaerat eius, dolorum pariatur, cumque suscipit impedit totam ipsa culpa dicta molestias. </div>
+    <div class="col-2 col-md-4 col-sm-5"> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim pariatur illo labore eligendi, asperiores, odio atque eum minima numquam excepturi tenetur adipisci non mollitia magni ipsam quas officia rem. Atque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint repellendus quibusdam itaque, reprehenderit rem perspiciatis sit, recusandae magnam quidem corporis eum praesentium dolorem odio. Dolorem ex hic facere commodi temporibus.
+     </div>
+    <div class="col-3 col-md-4 col-sm-5 third"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem, explicabo, placeat voluptates, dolores cum eveniet illo esse harum in debitis! Exercitationem maiores facilis molestiae illo amet nam iusto non. </div>
+    <div class="col-3 col-md-4 col-sm-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellendus eligendi libero quos earum voluptatum dolorem fuga enim culpa molestiae eaque vitae, odio ullam quasi delectus ipsum consequatur nisi explicabo? </div>
+</div>
+
+
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+.col-3{
+    border: 2px solid green; 
+}
+.container{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+/* @media (max-width: 760px) {
+    .col-3{
+        width: 100%;
+    }
+} */
+@media (max-width: 760px) {
+    .col-md-1{width: 8.33%;}
+    .col-md-2{width: 16.66%;}
+    .col-md-3{width: 25%;}
+    .col-md-4{width: 33.33%;}
+    .col-md-5{width: 41.66%;}
+    .col-md-6{width: 50%;}
+    .col-md-7{width: 58.33%;}
+    .col-md-8{width: 66.66%;}
+    .col-md-9{width: 75%;}
+    .col-md-10{width: 83.33%;}
+    .col-md-11{width: 91.66%;}
+    .col-md-12{width: 100%;}    
+}
+
+@media (max-width: 400px) {
+    .col-sm-1{width: 8.33%;}
+    .col-sm-2{width: 16.66%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-4{width: 33.33%;}
+    .col-sm-5{width: 41.66%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-7{width: 58.33%;}
+    .col-sm-8{width: 66.66%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-10{width: 83.33%;}
+    .col-sm-11{width: 91.66%;}
+    .col-sm-12{width: 100%;}    
+}
+
+@media (max-width: 1000PX) {
+.col-sm-5{
+    border: 2px solid blue;
+    width: 20%;
+}
+}
+
+
+
+</style>
+
+</body>
+</html>
