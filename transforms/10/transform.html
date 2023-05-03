@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfo</title>
+</head>
+<body>
+
+<div class="one"></div>
+
+<style>
+.one{
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    transform: translate(0px, 0px);
+    transition: transform 2s, width 2s, height 2s;
+}
+
+.one:hover{
+    transform: translate(10px, 10px);
+    width: 110px;
+    height: 110px
+}
+</style>
+</body>
+</html>
