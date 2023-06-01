@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.col{
+    border: 2px solid blue;
+    width: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+    .col{
+        width: 25%;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .col{
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .col{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .col{
+        width: 100%;
+    }
+}
+
