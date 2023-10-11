@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Display </title>
+	</head>
+<body>
+
+<div class="dropdown">
+	<button class="dropdown-btn"> Hello </button>
+	<div class="nav-list">
+		This is home<br>
+		Hi<br>
+		Hello
+	</div>
+</div>
+
+<style>
+
+.dropdown{
+	
+	width: 200px;
+}
+
+.dropdown-btn{
+	width: 100%;
+	padding: 10px;
+	background: orange;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.dropdown-btn:hover{
+	background: orangered;
+}
+.nav-list{
+	border-radius: 5px;
+	display: none;
+	background: green;
+	color: white;
+	font-size: 20px;
+}
+
+.dropdown:hover .nav-list{
+	display: block;
+	
+}
+
+.nav-list:hover{
+	background: red;
+}
+</style>
+
+</body>
+</html>

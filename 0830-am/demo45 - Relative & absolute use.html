@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title> Position - Absolute </title>
+	</head>
+<body>
+
+<div class="d d1"> Hello1 </div>
+<div class="d d2"> 
+	Course 
+	<div class="d2-1">Software</div>
+
+</div>
+<div class="d d3"> Hello3 </div>
+
+
+
+<style>
+.d{
+	border: 2px solid red;
+	width: 100px;
+	height: 100px;
+}
+
+.d2{
+	border: 5px solid blue;
+	position: relative;
+}
+
+.d2-1{
+	border: 2px solid red;
+	position: absolute;
+	bottom: 100%;
+	/* top: 0; */
+	height: 50px;
+	width: 120px;
+	display: none;
+}
+
+.d2:hover .d2-1{
+	display: block;
+}
+</style>
+
+
+</body>
+</html>
