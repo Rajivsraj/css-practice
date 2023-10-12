@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title> Position - Absolute </title>
+	</head>
+<body>
+
+<ul class="nav-list">
+	<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+	<li class="nav-item"> <a href="#" class="nav-link"> About </a> </li>
+	<li class="nav-item"> <a href="#" class="nav-link"> Contact </a> </li>
+	<li class="nav-item dropdown"> <a href="#" class="nav-link"> Gallery </a> 
+		<ul class="nav-list">
+			<li class="nav-item"> <a href="#" class="nav-link"> Home1 </a> </li>
+			<li class="nav-item"> <a href="#" class="nav-link"> About1 </a> </li>
+			<li class="nav-item"> <a href="#" class="nav-link"> Contact1 </a> </li>
+			<li class="nav-item"> <a href="#" class="nav-link"> Gallery1 </a> </li>
+		</ul>
+	
+	</li>
+	<li class="nav-item"> <a href="#" class="nav-link"> Login </a> </li>
+	
+</ul>
+
+
+<style>
+.nav-list{
+	border: 2px solid red;
+	list-style: none;
+	padding: 0px;
+}
+.nav-list::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nav-list .nav-item{
+	border: 2px solid blue;
+	float: left;
+}
+
+.nav-list .nav-item:hover{
+	background: orange;
+}
+
+.nav-item .nav-link{
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.dropdown .nav-list .nav-item{
+	clear: both;
+	width: 100%;
+}
+
+.dropdown .nav-list{
+	position: absolute;
+	display: none;
+}
+
+.dropdown:hover .nav-list{
+	display: block;
+}
+</style>
+
+</body>
+</html>
