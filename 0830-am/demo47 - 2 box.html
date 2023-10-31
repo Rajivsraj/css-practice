@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Position - Absolute </title>
+	</head>
+<body>
+
+<div class="container">
+	<div class="col">
+		col 1
+	</div>
+	
+	<div class="col">
+		col 2
+		
+	</div>
+</div>
+
+
+<style>
+*{
+	box-sizing: border-box;
+}
+.container{
+	border: 2px solid red;
+}
+
+.container::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col{
+	border: 2px solid blue;
+	float: left;
+	width: 50%;
+}
+
+
+</style>
+</body>
+</html>
