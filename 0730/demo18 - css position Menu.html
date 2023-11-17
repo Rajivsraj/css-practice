@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Position - Menu </title>
+	</head>
+<body>
+
+<div class="dropdown">
+	Courses
+	<div class="nav-item">
+		PHP<br>
+		MYSQl
+	</div>
+</div>
+
+
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+
+
+
+.dropdown{
+	border: 2px solid red;
+	width: 120px;
+	position: relative;
+	background: yellow;
+	color: orangered;
+	#border-radius: 10px;
+}
+
+.nav-item{
+	border: 2px solid blue;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0px;
+	background-color: red;
+	color: white;
+	display: none;
+}
+
+.dropdown:hover .nav-item{
+	display: block;
+}
+</style>
+
+</body>
+</html>
