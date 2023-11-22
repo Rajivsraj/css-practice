@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Position  </title>
+		
+	</head>
+<body>
+
+<h1>This is menu </h1>
+
+
+<div class="dropdown">
+	Courses
+	<ul class="nav-list">
+		<li class="nav-item"> Home </li>
+		<li class="nav-item"> Home </li>
+		<li class="nav-item"> Home </li>
+		<li class="nav-item"> Home </li>
+		<li class="nav-item"> Home </li>
+	</ul>
+
+</div>
+
+
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+
+.dropdown{
+	display: inline-block;
+	padding: 8px 16px;
+	position: relative;
+	background: teal;
+	color: white;
+	box-shadow: 2px 2px 5px gray;
+
+}
+.nav-list{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	color: black;
+	top: 100%;
+	width: 100%;
+	left: 0px;
+	box-shadow: 2px 2px 5px gray;
+	display: none;
+}
+
+
+.nav-item{
+	padding: 5px 6px;
+	
+}
+
+.nav-item:hover{
+	background: red;
+	color: white;
+}
+
+.dropdown:hover .nav-list{
+	display: block;
+}
+</style>
+
+</body>
+</html>
