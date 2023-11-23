@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Position  </title>
+		
+	</head>
+<body>
+
+<h1>This is menu </h1>
+
+
+<ul class="nav-list">
+	<li class="nav-item">Home</li>
+	<li class="nav-item">About</li>
+	<li class="nav-item">Contact</li>
+	<li class="nav-item dropdown">Courses
+		<ul class="nav-list">
+			<li class="nav-item"> Course 1 </li>
+			<li class="nav-item"> Course 2 </li>
+			<li class="nav-item dropdown"> Course 3 
+				<ul class="nav-list">
+					<li class="nav-item"> C3 1 </li>
+					<li class="nav-item"> C3 1 </li>
+					<li class="nav-item"> C3 1 </li>
+					<li class="nav-item"> C3 1 </li>
+				</ul>
+			
+			
+			</li>
+			<li class="nav-item"> Course 4 </li>
+			<li class="nav-item"> Course 4 </li>
+		
+		</ul>
+	
+	</li>
+	<li class="nav-item dropdown">Login
+		<ul class="nav-list">
+			<li class="nav-item"> Course 1 </li>
+			<li class="nav-item dropdown"> 
+				Course 2 
+				<ul class="nav-list">
+					<li class="nav-item"> C3 1 </li>
+					<li class="nav-item"> C3 1 </li>
+					<li class="nav-item"> C3 1 </li>
+					<li class="nav-item"> C3 1 </li>
+				</ul>
+			</li>
+		</ul>
+
+	
+	</li>
+	<li class="nav-item">Sign up</li>
+</ul>
+
+
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+
+.nav-list{
+	border: 2px solid red;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	background: orangered;
+}
+
+.nav-list::after{
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.nav-item{
+	border: 2px solid blue;
+	float: left;
+	padding: 8px 16px;
+}
+
+.nav-item:hover{
+	background: greenyellow;
+}
+
+.dropdown{
+	position: relative;
+}
+
+.dropdown .nav-list{
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	width: 120px;
+	display: none;
+}
+
+.dropdown .nav-list .nav-item{
+	clear: both;
+	width: 100%;
+}
+
+.dropdown:hover .nav-list{
+	display: block;
+}
+
+.dropdown .dropdown .nav-list{
+	left: 100%;
+	top: 0px;
+	display: none;
+}
+
+.dropdown .dropdown:hover .nav-list{
+	display: block;
+}
+</style>
+
+</body>
+</html>
