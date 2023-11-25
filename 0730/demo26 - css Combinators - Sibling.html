@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Combinators - Sibling  </title>
+		
+	</head>
+<body>
+
+
+<div class="container">
+	<h1> h1 </h1>
+	<p class="p"> first p </p>
+	<div class="menu">I'm child</div>
+	<h1> h1 1 </h1>
+	<div class="menu">I'm child</div>
+	<div class="menu">
+		<p class="p"> hi </p>
+		<h1> h1 1 </h1>
+	</div>
+	<div class="menu">I'm child</div>
+	<h1> h1 2 </h1>
+	<div class="menu">I'm child</div>
+	<p class="p"> last hi </p>
+</div>
+
+	<p class="p"> hi </p>
+
+	<!-- <h1> h1 </h1> -->
+	<!-- <p class="p"> first p </p> -->
+	<!-- <div class="menu">I'm child</div> -->
+	<!-- <h1> h1 1 </h1> -->
+	<!-- <div class="menu">I'm child</div> -->
+	<!-- <div class="menu"> -->
+		<!-- <p class="p"> hi </p> -->
+		<!-- <h1> h1 1 </h1> -->
+	<!-- </div> -->
+	<!-- <div class="menu">I'm child</div> -->
+	<!-- <h1> h1 2 </h1> -->
+	<!-- <div class="menu">I'm child</div> -->
+	<!-- <p class="p"> last hi </p> -->
+	
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+
+.container{
+	border: 2px solid red;
+}
+
+/*
+h1 ~ p{
+	border: 2px solid green;
+}*/
+
+
+h1 ~ .p{
+	border: 2px solid blue;
+}
+	#OR
+.container h1 ~ .p{
+	border: 2px solid blue;
+}
+</style>
+
+</body>
+</html>

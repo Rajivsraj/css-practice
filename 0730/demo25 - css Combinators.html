@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Combinators  </title>
+		
+	</head>
+<body>
+
+
+<div class="container">
+	<p class="p"> first p </p>
+	<div class="menu">I'm child</div>
+	<div class="menu">I'm child</div>
+	<div class="menu">
+		<p class="p"> hi </p>
+	</div>
+	<div class="menu">I'm child</div>
+	<div class="menu">I'm child</div>
+	<p class="p"> last hi </p>
+</div>
+
+
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+
+.container{
+	border: 2px solid red;
+}
+
+.container > .p{
+	border: 2px solid green;
+}
+</style>
+
+</body>
+</html>
