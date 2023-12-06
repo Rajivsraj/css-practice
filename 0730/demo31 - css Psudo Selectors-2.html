@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Combinators - Sibling </title>
+</head>
+<body>
+
+	<ul class="nav-list">
+		<li class="nav-item">Home</li>
+		<li class="nav-item">Home</li>
+		<li class="nav-item">Home</li>
+		<li class="nav-item">Home</li>
+	</ul>
+
+	<p class="p1">hello universe</p>
+
+	<p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ea quam consequatur quisquam nostrum accusantium rerum adipisci officiis officia quae sed ipsum corrupti aperiam quis, aliquid vitae ipsa quas veniam.</p>
+	<style>
+		.nav-list{
+			border: 2px solid red;
+			position: relative;
+		}
+
+
+		.nav-list::after{
+			content: "About";
+			
+		}
+		.nav-list::before{
+			content: "First";
+			background-image: url("images/abc.jpg");
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top:0px;
+			background-size: 100%;
+		}
+
+		.p1{
+			border: 2px solid red;
+		}
+
+		.p1::first-letter{
+			color: red;
+		}
+
+		.p2::selection{
+			background-color: aqua;
+		}
+
+
+	</style>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Combinators - Menu  </title>
+		
+	</head>
+<body>
+
+
+<nav class="navbar">
+	<ul class="nav-list">
+		<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+		<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+		<li class="nav-item"> <a href="#" class="nav-link"> Home 1 </a> 
+			<ul class="nav-list">
+				<li class="nav-item"> <a href="#" class="nav-link"> Home  hello</a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+			</ul>
+		</li>
+		<li class="nav-item"> <a href="#" class="nav-link"> Home 2 </a>
+			<ul class="nav-list">
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+				<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+			</ul>
+		</li>
+		<li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li>
+	</ul>
+	<!-- <ul class="nav-list"> -->
+		<!-- <li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li> -->
+		<!-- <li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li> -->
+		<!-- <li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li> -->
+		<!-- <li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li> -->
+		<!-- <li class="nav-item"> <a href="#" class="nav-link"> Home </a> </li> -->
+	<!-- </ul> -->
+
+</nav>
+
+
+<style>
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+}
+
+.navbar{
+	border: 2px solid red;
+}
+
+.nav-list::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.navbar .nav-list{
+	border: 2px solid blue;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar > .nav-list > .nav-item{
+	border: 2px solid orange;
+	float: left;
+	position: relative;
+}
+
+.nav-item > .nav-list{
+	border: 2px solid orange;
+	position: absolute;
+	display: none;
+	top: 100%;
+	width: 100px;
+}
+
+.nav-item:hover > .nav-list{
+	display: block;
+}
+
+
+.nav-item .nav-link{
+	border: 2px solid green;
+	text-decoration: none;
+	display: block;
+}
+</style>
+
+</body>
+</html>

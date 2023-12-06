@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+.navbar{
+    /* border: 2px solid blue; */
+    background-color: orange;
+}
+
+.nav-list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    /* border: 2px solid red; */
+}
+
+.nav-list::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-list > .nav-item{
+    /* border: 2px solid green; */
+    float: left;
+}
+
+.nav-link{
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px;
+}
+
+.nav-link:active{
+    color: white;
+    background-color: orangered;
+}
+.active{
+    background-color: red;
+}
+
+.nav-list > .nav-item:hover:not(.active){
+    /* border: 2px solid green; */
+    background-color: yellowgreen;
+}
+
+.nav-list > .nav-item .nav-link:focus{
+    background-color: yellow;
+}
+
+/* FORM */
+.btn:checked + .collapse{
+    background-color: green;
+}
