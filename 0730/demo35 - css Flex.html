@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Flex </title>
+</head>
+<body>
+
+<!-- 1 -->
+<!-- <div class="row">
+	<div class="col one">One</div>
+	<div class="col two">two</div>
+	<div class="col three">Three</div>
+	<div class="col four">Four</div>
+</div> -->
+
+<!-- 2 -->
+<!-- <div class="row">
+	<div class="col one">One</div>
+	<div class="col two">two</div>
+	<div class="col three">Three</div>
+</div> -->
+
+
+<!-- 3 -->
+<div class="row">
+	<div class="col one">One</div>
+
+
+</div>
+
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		margin: 0px;
+	}
+
+
+/* 3 */
+.row{
+	border: 2px solid red;
+	display: flex;
+	flex-flow: row wrap;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.col{
+	border: 2px solid green;
+	width: 25%;
+	padding: 0.12rem 0.5rem;
+}
+	/* 2 */
+/* .row{
+	border: 2px solid red;
+	display: flex;
+	flex-flow: row wrap;
+	//flex-direction: row;
+	//justify-content: center;
+	//justify-content: space-around;
+	justify-content: space-between;
+	height: 200px;
+}
+
+.col{
+	border: 2px solid green;
+	width: 25%;
+	//padding: 2px 5px;
+	padding: 0.12rem 0.5rem;
+}
+*/
+
+
+
+/* 1 */
+/* .row{
+	border: 2px solid red;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.col{
+	border: 2px solid green;
+	width: 25%;
+	padding: 0.12rem 0.5rem;
+} */
+</style>
+</body>
+</html>
