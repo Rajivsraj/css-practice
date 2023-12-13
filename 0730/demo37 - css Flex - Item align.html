@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Flex </title>
+</head>
+<body>
+
+<!-- 1 -->
+<div class="row">
+	<div class="col one">One</div>
+	<div class="col two">two</div>
+	<div class="col three">Three</div>
+	<div class="col four">Four</div>
+	<div class="col five">Five</div>
+</div>
+
+
+
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		margin: 0px;
+	}
+
+
+/* 1 */
+.row{
+	border: 2px solid red;
+	display: flex;
+	flex-flow: row wrap;
+	height: 200px;
+}
+
+.col{
+	border: 2px solid green;
+	flex-basis: 200px;
+	padding: 0.12rem 0.5rem;
+}
+
+.three{
+	align-self: center;
+}
+</style>
+</body>
+</html>
