@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.box1{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: colorChanging;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes colorChanging {
+    0%{background-color: red;}
+    25%{background-color: orangered;}
+    50%{background-color: orange;}
+    75%{background-color: yellow;}
+    100%{background-color: blue;}
+}
+
+/* @keyframes colorChanging {
+    from{background-color: red;}
+    to{background-color: yellow;}
+} */

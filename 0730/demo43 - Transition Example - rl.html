@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Flex </title>
+</head>
+<body>
+
+	<div class="card">
+		<div class="shutter">hello</div>
+		<div class="card-body">
+			<h1 class="text-center">Mr. Sharma</h1>
+		</div>
+		<img src="images/doctor.png" class="img-fluid">
+	</div>
+
+
+	<style>
+		.card{
+			position: relative;
+			border: 2px solid red;
+			width: 250px;
+			background-color: yellow;
+		}
+
+		.img-fluid{
+			width: 100%;
+		}
+
+		.text-center{
+			text-align: center;
+		}
+
+		h1{
+			margin: 0px;
+			font-weight: 400px;
+		}
+
+		.shutter{
+			border: 2px solid blue;
+			background-color: green;
+			opacity: 0.5;
+			position: absolute;
+			right: 0px;
+			width: 0px;
+			height: 100%;
+			overflow: hidden;
+			transition-property: width;
+			transition-duration: 2s;
+		}
+		.card:hover .shutter{
+			width: 100%;
+		}
+	</style>
+</style>
+</body>
+</html>

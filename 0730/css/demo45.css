@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.box1{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: positionChange;
+    animation-duration: 5s;
+    position: relative;
+}
+
+@keyframes positionChange {
+    0%{left: 0px;}
+    25%{
+        top: 0px;
+        left: 200px;}
+    50%{
+        top: 100px;
+        left: 200px;
+    }
+    75%{left: 0px;
+        top: 100px;
+    }
+    100%{
+        top:0px
+    }
+}
+
+/* @keyframes colorChanging {
+    from{background-color: red;}
+    to{background-color: yellow;}
+} */
