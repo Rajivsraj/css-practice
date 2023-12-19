@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box1{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    top: 200px;
+    /* transform: translate(50%, 100%); */
+    /* transform: translateY(100px); */
+    /* transform: rotate(50deg); */
+    /* transform: scale(1, 4); */
+    /* transform: skewX(10deg); */
+    /* transform: skewY(120deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    /* transform: rotateZ(90deg); */
+}
+
+
+/* .btn{
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    position: relative;
+    left: 100px;
+}
+
+
+.notification{
+    border: 1px solid red;
+    position: absolute;
+    display: block;
+
+    transform: translate(50%, -100%);
+} */

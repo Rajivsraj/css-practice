@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box1{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    top: 200px;
+    background-color: yellow;
+    transform: rotate(0deg);
+    animation-name: round;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes round {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
