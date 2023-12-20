@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    border: 2px solid red;
+    background-color: green;
+}
+
+@media (max-width: 576px) and (orientation: portrait){
+    .container{
+        background-color: yellow;
+    }
+}
+
+/* @media (max-width: 320px){
+    .container{
+        background-color: red;
+    }
+} */
+
+
+
+
+
+

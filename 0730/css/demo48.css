@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px 100px;
+    /* justify-content: center; */
+    /* column-gap: 15px;
+    row-gap: 5px; */
+    gap: 10px 20px;
+}
+
+.col{
+    border: 2px solid green;
+    width: 100%;
+}
